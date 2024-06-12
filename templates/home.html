@@ -98,13 +98,14 @@
             button:hover {
                 background-color: #0056b3;
             }
-            
+
             footer {
-                margin: 20px 0;
+                width: 75%;
             }
     </style>
     </head>
     <body>
+        {% include 'nav.html' %}
         <header>
             <h1>{{webpage_name}}</h1>
         </header>
@@ -121,9 +122,8 @@
                 {% include 'jobitem.html' %}
             {% endfor %}
         </section>
-        <footer>
-            <button>Contact Us</button>
-        </footer>
+
+        {% include 'footer.html' %}
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
